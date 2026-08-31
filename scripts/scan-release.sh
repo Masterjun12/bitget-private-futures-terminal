@@ -9,6 +9,8 @@ fail() {
   exit 1
 }
 
+command -v rg >/dev/null 2>&1 || fail "required scanner command not found: rg"
+
 mapfile -d '' release_files < <(
   find . -type f \
     ! -path './.git' ! -path './.git/*' \

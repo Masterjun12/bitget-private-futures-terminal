@@ -27,6 +27,11 @@ jobs:
           distribution: temurin
           java-version: '11'
 
+      - name: Install release scanner dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends ripgrep
+
       - name: Check for Python files, legacy web files, paths, and secrets
         run: ./scripts/scan-release.sh
 
