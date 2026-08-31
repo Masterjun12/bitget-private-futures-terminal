@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Bitget Private Futures Terminal
+Comment=Java always-on-top Bitget account and futures terminal
+Exec=/usr/bin/bitget-private-terminal
+TryExec=/usr/bin/bitget-private-terminal
+Icon=bitget-private-terminal
+Terminal=false
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=3
+Categories=Office;Finance;

@@ -1,0 +1,11 @@
+Package: bitget-private-terminal
+Version: 3.1.1
+Section: utils
+Priority: optional
+Architecture: all
+Depends: default-jre (>= 2:1.11) | java11-runtime, libsecret-tools, fonts-dejavu-core
+Maintainer: Bitget Private Futures Terminal Contributors <maintainers@example.invalid>
+Description: Read-only Java desktop dashboard for Bitget futures
+ Displays public futures prices and, with user-supplied credentials,
+ read-only account equity and open-position data. Includes a responsive,
+ borderless always-on-top window and GNOME Keyring credential storage.

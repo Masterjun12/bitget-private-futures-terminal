@@ -1,0 +1,8 @@
+/build/
+/dist/
+*.class
+*.jar
+*.deb
+*.log
+*.swp
+*~
