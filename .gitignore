@@ -6,3 +6,7 @@
 *.log
 *.swp
 *~
+
+# livewiki:start
+.livewiki/
+# livewiki:end

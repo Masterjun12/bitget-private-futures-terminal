@@ -1,0 +1,63 @@
+graph LR
+  _github[".github"]
+  _github_workflows[".github/workflows"]
+  _github --> _github_workflows
+  _github_workflows_build_yml[".github/workflows/build.yml"]
+  _github_workflows --> _github_workflows_build_yml
+  CONTRIBUTING_md["CONTRIBUTING.md"]
+  PRIVACY_md["PRIVACY.md"]
+  README_md["README.md"]
+  SECURITY_md["SECURITY.md"]
+  package["package"]
+  package_bitget_private_terminal_desktop["package/bitget-private-terminal.desktop"]
+  package --> package_bitget_private_terminal_desktop
+  package_build_deb_sh["package/build-deb.sh"]
+  package --> package_build_deb_sh
+  package_launcher_sh["package/launcher.sh"]
+  package --> package_launcher_sh
+  scripts["scripts"]
+  scripts_inspect_package_sh["scripts/inspect-package.sh"]
+  scripts --> scripts_inspect_package_sh
+  scripts_quality_gate_sh["scripts/quality-gate.sh"]
+  scripts --> scripts_quality_gate_sh
+  scripts_scan_release_sh["scripts/scan-release.sh"]
+  scripts --> scripts_scan_release_sh
+  scripts_verify_reproducible_build_sh["scripts/verify-reproducible-build.sh"]
+  scripts --> scripts_verify_reproducible_build_sh
+  src["src"]
+  src_com["src/com"]
+  src --> src_com
+  src_com_local["src/com/local"]
+  src_com --> src_com_local
+  src_com_local_bitget["src/com/local/bitget"]
+  src_com_local --> src_com_local_bitget
+  src_com_local_bitget_BitgetClient_java["src/com/local/bitget/BitgetClient.java"]
+  src_com_local_bitget --> src_com_local_bitget_BitgetClient_java
+  src_com_local_bitget_CredentialStore_java["src/com/local/bitget/CredentialStore.java"]
+  src_com_local_bitget --> src_com_local_bitget_CredentialStore_java
+  src_com_local_bitget_Main_java["src/com/local/bitget/Main.java"]
+  src_com_local_bitget --> src_com_local_bitget_Main_java
+  src_com_local_bitget_MiniJson_java["src/com/local/bitget/MiniJson.java"]
+  src_com_local_bitget --> src_com_local_bitget_MiniJson_java
+  src_com_local_bitget_Models_java["src/com/local/bitget/Models.java"]
+  src_com_local_bitget --> src_com_local_bitget_Models_java
+  src_com_local_bitget_StateStore_java["src/com/local/bitget/StateStore.java"]
+  src_com_local_bitget --> src_com_local_bitget_StateStore_java
+  src_com_local_bitget_TerminalWindow_java["src/com/local/bitget/TerminalWindow.java"]
+  src_com_local_bitget --> src_com_local_bitget_TerminalWindow_java
+  src_com_local_bitget_WindowInteractionController_java["src/com/local/bitget/WindowInteractionController.java"]
+  src_com_local_bitget --> src_com_local_bitget_WindowInteractionController_java
+  test["test"]
+  test_com["test/com"]
+  test --> test_com
+  test_com_local["test/com/local"]
+  test_com --> test_com_local
+  test_com_local_bitget["test/com/local/bitget"]
+  test_com_local --> test_com_local_bitget
+  test_com_local_bitget_BitgetClientTest_java["test/com/local/bitget/BitgetClientTest.java"]
+  test_com_local_bitget --> test_com_local_bitget_BitgetClientTest_java
+  tests["tests"]
+  tests_release_contract_sh["tests/release-contract.sh"]
+  tests --> tests_release_contract_sh
+  tests_scan_release_test_sh["tests/scan-release-test.sh"]
+  tests --> tests_scan_release_test_sh

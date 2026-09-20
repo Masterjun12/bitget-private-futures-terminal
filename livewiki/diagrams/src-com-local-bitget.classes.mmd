@@ -1,0 +1,213 @@
+%%{init: {"themeCSS": ".relation { stroke: transparent !important; }"}}%%
+classDiagram
+  direction TB
+  class class_1["ApiException"] {
+    +ApiException()
+  }
+  class class_2["BitgetClient"] {
+    +BitgetClient()
+    +buildSignature()
+    +encodeQuery()
+    +fetchAccount()
+    +fetchClassic()
+    +fetchMarketDashboard()
+    +fetchUta()
+    +first()
+    +longNumber()
+    +number()
+    +parseClassic()
+    +parseMarket()
+    +parseUta()
+    +requestJson()
+    +safeMessage()
+    +string()
+  }
+  class class_3["ClientException"] {
+    +ClientException()
+  }
+  class class_4["CredentialStore"] {
+    +clear()
+    +compact()
+    +CredentialStore()
+    +load()
+    +run()
+    +save()
+    +text()
+  }
+  class class_5["ProcessResult"] {
+    +ProcessResult()
+  }
+  class class_6["StoreException"] {
+    +StoreException()
+  }
+  class class_7["Arguments"] {
+    +parse()
+  }
+  class class_8["Main"] {
+    +installCrashHandler()
+    +interactionCheck()
+    +main()
+    +Main()
+    +safeMessage()
+    +toJson()
+    +writeCrashLog()
+  }
+  class class_9["MiniJson"] {
+    +appendString()
+    +MiniJson()
+    +parse()
+    +stringify()
+  }
+  class class_10["Parser"] {
+    +atEnd()
+    +consume()
+    +error()
+    +expect()
+    +Parser()
+    +readArray()
+    +readLiteral()
+    +readNumber()
+    +readObject()
+    +readString()
+    +readValue()
+    +skipWhitespace()
+  }
+  class class_11["AccountSnapshot"] {
+    +AccountSnapshot()
+  }
+  class class_12["Credentials"] {
+    +Credentials()
+    +validate()
+  }
+  class class_13["Dashboard"] {
+    +Dashboard()
+  }
+  class class_14["Models"] {
+    +Models()
+  }
+  class class_15["Position"] {
+    +Position()
+  }
+  class class_16["Quote"] {
+    +Quote()
+  }
+  class class_17["StateStore"] {
+    +integer()
+    +load()
+    +save()
+  }
+  class class_18["WindowState"] {
+    +defaults()
+    +WindowState()
+  }
+  class class_19["ResponsivePanel"] {
+    +getPreferredScrollableViewportSize()
+    +getScrollableBlockIncrement()
+    +getScrollableTracksViewportHeight()
+    +getScrollableTracksViewportWidth()
+    +getScrollableUnitIncrement()
+  }
+  class class_20["SettingsDialog"] {
+    +addField()
+    +clearCredentials()
+    +doInBackground()
+    +done()
+    +enteredCredentials()
+    +field()
+    +saveAndApply()
+    +setBusy()
+    +SettingsDialog()
+    +testConnection()
+  }
+  class class_21["TerminalWindow"] {
+    +accountRow()
+    +adjustDashboardHeight()
+    +applyFontScale()
+    +applyResponsiveLayout()
+    +buildAccountPanel()
+    +buildCompactPanel()
+    +buildGainersPanel()
+    +buildHeader()
+    +buildMainPanel()
+    +buildMarketPanel()
+    +buildPositionsPanel()
+    +button()
+    +capture()
+    +close()
+    +compactMessage()
+    +componentMoved()
+    +componentResized()
+    +configureScrollBarColors()
+    +createDecreaseButton()
+    +createIncreaseButton()
+    +currentFontScale()
+    +formatMoney()
+    +formatPrice()
+    +frame()
+    +keepOnScreen()
+    +label()
+    +openSettings()
+    +panel()
+    +refresh()
+    +rememberMainBounds()
+    +section()
+    +setCompact()
+    +setStackHeight()
+    +setStatus()
+    +settingsSingletonCheck()
+    +shortSymbol()
+    +show()
+    +showAccountError()
+    +showPositionMessage()
+    +showPositions()
+    +signedMoney()
+    +splitHeight()
+    +styleScrollBar()
+    +TerminalWindow()
+    +trendColor()
+    +trim()
+    +uiContract()
+    +updateAccount()
+    +updateMarket()
+    +usableScreen()
+    +windowClosed()
+    +windowClosing()
+    +zeroButton()
+  }
+  class class_22["WindowInteractionController"] {
+    +addMoveListeners()
+    +addResizeListeners()
+    +close()
+    +cursorFor()
+    +edgeAt()
+    +isInteracting()
+    +mouseDragged()
+    +mouseMoved()
+    +mousePressed()
+    +mouseReleased()
+    +reset()
+    +resize()
+    +setDragAreas()
+    +WindowInteractionController()
+  }
+  class_1 -- class_2
+  class_2 -- class_3
+  class_3 -- class_4
+  class_4 -- class_5
+  class_5 -- class_6
+  class_6 -- class_7
+  class_7 -- class_8
+  class_8 -- class_9
+  class_9 -- class_10
+  class_10 -- class_11
+  class_11 -- class_12
+  class_12 -- class_13
+  class_13 -- class_14
+  class_14 -- class_15
+  class_15 -- class_16
+  class_16 -- class_17
+  class_17 -- class_18
+  class_18 -- class_19
+  class_19 -- class_20
+  class_20 -- class_21
+  class_21 -- class_22
